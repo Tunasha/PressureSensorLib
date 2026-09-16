@@ -22,7 +22,7 @@ This library assumes the sensor is connected to an Analog-to-Digital Converter (
 - pin: The analog input pin connected to the sensor.
 - samples: The number of readings to average per measurement (higher = smoother but slower).
 
-## #  Method	Description
+###  Method	Description
 - void setParam(float minPress, float maxPress)	Sets the minimum and maximum pressure range for the sensor (e.g., 0 to 150 PSI).
 - void begin()	Initializes the sensor pins and internal variables. Call this in setup().
 - float readVolt()	Returns the raw voltage reading from the sensor.
