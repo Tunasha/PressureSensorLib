@@ -7,8 +7,9 @@ unsigned long previousMillis = 0;
 
 void setup() {
   Serial.begin(9600);
-  sensor.setParam(0.0, 500.0);  // set according to your sensor the minPress, maxPress (in your unit, e.g. bar)
-  sensor.begin();
+  sensor.setParam(0.0, 500.0);  // set according to your sensor minPress, maxPress (in your unit, e.g. bar)
+                               // Only use a shunt Resistor of 150ohms for the sensor connection for error-free readings
+  sensor.begin(); 
 }
 
 void loop() {
