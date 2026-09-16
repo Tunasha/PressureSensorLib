@@ -2,7 +2,7 @@
 A lightweight C++ library for reading pressure values from hydrostatic analogue pressure sensors. This library handles voltage and current conversions, allowing for easy integration of pressure transducers (e.g., 4-20mA or 0-10V systems) into embedded projects.
 
 # Features
-Flexible Configuration: Set custom minimum and maximum pressure ranges.
+Flexible Configuration: Set custom minimum and maximum pressure ranges. 
 Multiple Units: Read raw voltage, current (mA), or calculated pressure.
 Sampling/Averaging: Configurable sample count to smooth out sensor noise.
 Reset Functionality: Easily re-initialize the sensor state.
