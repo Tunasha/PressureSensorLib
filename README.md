@@ -10,7 +10,7 @@ Reset Functionality: Easily re-initialize the sensor state.
 ###   Installation
 - 1.Clone this repository into your project's library folder:
 git clone https://github.com/yourusername/PressureSensor.git
-- 2.Include the header file in your C++ project:
+- 2.Include the header file in your Arduino code
   **#include "PressureSensor.h"**
 
 ###   Hardware Setup
