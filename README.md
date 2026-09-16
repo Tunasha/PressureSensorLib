@@ -23,16 +23,16 @@ This library assumes the sensor is connected to an Analog-to-Digital Converter (
 - samples: The number of readings to average per measurement (higher = smoother but slower).
 
 ###  Method	Description
-- ***void setParam(float minPress, float maxPress) ***	Sets the minimum and maximum pressure range for the sensor (e.g., 0 to 150 PSI).
-- *** void begin() ***	Initializes the sensor pins and internal variables. Call this in setup().
-- *** float readVolt() ***	Returns the raw voltage reading from the sensor.
-- *** float readCurr() ***	Returns the calculated current (typically in mA) based on the shunt resistor value.
-- ***  float readPressure()	*** Returns the calculated pressure mapped to the minPress and maxPress parameters.
+- ***void setParam(float minPress, float maxPress)***	Sets the minimum and maximum pressure range for the sensor (e.g., 0 to 150 PSI).
+- ***void begin()***	Initializes the sensor pins and internal variables. Call this in setup().
+- ***float readVolt()***	Returns the raw voltage reading from the sensor.
+- ***float readCurr()***	Returns the calculated current (typically in mA) based on the shunt resistor value.
+- ***float readPressure()*** Returns the calculated pressure mapped to the minPress and maxPress parameters.
 
 ###  Calibration Notes
 To ensure accurate readings, verify the following in your hardware setup:
-- *** Shunt Resistor :*** If using a current output sensor, the readCurr function relies on the resistance value specified in your source code. Ensure this matches the physical resistor used.
-- *** ADC Reference:***  Ensure your microcontroller's ADC reference voltage matches the expected logic level (e.g., 5V vs 3.3V).
+- ***Shunt Resistor*** : If using a current output sensor, the readCurr function relies on the resistance value specified in your source code. Ensure this matches the physical resistor used.
+- ***ADC Reference*** :  Ensure your microcontroller's ADC reference voltage matches the expected logic level (e.g., 5V vs 3.3V).
 
 ###  License
 This project is licensed under the MIT License 
