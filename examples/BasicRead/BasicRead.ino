@@ -1,6 +1,6 @@
 
 /* This is simple example to read all data from hydrostatic liquid pressure sensor and print them out to serial bus.       */
-#include <PressureSensor.h>
+#include <PressureSensorLib.h>
 
 PressureSensor sensor(A0, 10);  // Pin A0, average over 10 samples
 unsigned long previousMillis = 0;
