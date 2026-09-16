@@ -11,7 +11,7 @@ Reset Functionality: Easily re-initialize the sensor state.
 - 1.Clone this repository into your project's library folder:
 git clone https://github.com/yourusername/PressureSensor.git
 - 2.Include the header file in your C++ project:
-  *#include "PressureSensor.h"*
+  **#include "PressureSensor.h"**
 
 ###   Hardware Setup
 This library assumes the sensor is connected to an Analog-to-Digital Converter (ADC) pin. If you are using a current-loop sensor (e.g., 4-20mA), ensure you have a Shunt Resistor installed in parallel to convert the current to a measurable voltage.
