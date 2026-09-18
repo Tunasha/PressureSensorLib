@@ -3,6 +3,7 @@
 PressureSensor::PressureSensor(int pin, int samples) {
   _pin = pin;
   _samples = samples;
+  if(_samples < 1){_samples=1;}
 
 }
 
