@@ -29,7 +29,7 @@ void PressureSensor::begin() {
   analogReadResolution(12);
   _adcRef        = 3.3f;
   _adcResolution = 4095.0f;
-
+  
 #elif defined(ARDUINO_ARCH_STM32)
   // ---- STM32 cores (Blue Pill, Black Pill, etc.) ----
   pinMode(_pin, INPUT_ANALOG);
@@ -71,7 +71,7 @@ float PressureSensor::roundUp(float value, int decimals) {
 }
 
 float PressureSensor::readPressure() {
-  double in_current = roundUp(readCurr(), 3);
+  double in_current = roundUp(readCurr(),x);
   float in_min = 0.004;
   float in_max = 0.016;
   result = _minPress + (_maxPress - _minPress) * ((in_current - in_min) / in_max);
