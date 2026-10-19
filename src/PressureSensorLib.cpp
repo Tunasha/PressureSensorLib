@@ -71,7 +71,7 @@ float PressureSensor::roundUp(float value, int decimals) {
 }
 
 float PressureSensor::readPressure() {
-  double in_current = roundUp(readCurr(),x);
+  double in_current = roundUp(readCurr(),3);
   float in_min = 0.004;
   float in_max = 0.016;
   result = _minPress + (_maxPress - _minPress) * ((in_current - in_min) / in_max);
